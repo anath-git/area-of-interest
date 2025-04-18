@@ -9,14 +9,14 @@
 
 html {
     scroll-behavior: smooth;
-        font-size: 100%;
+    font-size: 100%;
 }
 
 body {
     font-family: 'Nunito Sans', sans-serif;
     line-height: 1.6;
     color: #333;
-        background-color: #f8f9fa;
+    background-color: #f8f9fa;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -80,13 +80,13 @@ li {
 
 strong {
     font-weight: 700;
-        color: #34495e;
+    color: #34495e;
 }
 
 /* --- Header --- */
 .site-header {
     background-color: #34495e;
-        color: #ecf0f1;
+    color: #ecf0f1;
     padding: 3rem 0;
     text-align: center;
     margin-bottom: 2rem;
@@ -126,7 +126,7 @@ strong {
     position: absolute;
     left: 0;
     top: 1px;
-        color: #151414;
+    color: #151414;
     font-weight: bold;
 }
 
@@ -135,7 +135,8 @@ strong {
     margin-top: 1.5rem;
 }
 
-.video-link {
+.video-link,
+.progress-button {
     display: inline-block;
     margin-right: 1rem;
     margin-bottom: 0.5rem;
@@ -144,19 +145,38 @@ strong {
     border-radius: 4px;
     background-color: #ffffff;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-size: 0.95rem;
 }
 
 .video-link:hover,
-.video-link:focus {
+.video-link:focus,
+.progress-button:hover,
+.progress-button:focus {
     background-color: #3498db;
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Optional: "Coming Soon" styling */
+.status-coming-soon {
+    /*font-style: italic;*/
+    /* color: #888; */
+    margin-left: 0.25rem;
+}
+
+/*
+.video-link,
+.progress-button {
+display: block;
+margin-right: 0;
+margin-bottom: 0.75rem;
+text-align: center;
+}
+*/
 /* --- Footer --- */
 .site-footer {
     background-color: #2c3e50;
-        color: #bdc3c7;
+    color: #bdc3c7;
     text-align: center;
     padding: 1.5rem 0;
     margin-top: 2rem;
@@ -207,7 +227,8 @@ strong {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .video-link {
+                                .video-link,
+                                .progress-button {
         display: block;
         margin-right: 0;
         margin-bottom: 0.75rem;
